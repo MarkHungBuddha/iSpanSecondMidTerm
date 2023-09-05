@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新增產品資料</title>
+</head>
+<body>
+	<form method="post" action="../InsertProduct">
+		<h2 align="center">新增產品資料</h2>
+		<table border="1" align="center">
+			<tr>
+				<td>自動產生產品 ID：</td>
+				<td><input type="text" name="productid" placeholder="自動產生產品 ID"
+					readonly /></td>
+			</tr>
+			<tr>
+				<td>選擇賣家會員編號：</td>
+				<td><select name="sellermemberid">
+						<option value="1">cristina aguilar</option>
+						<option value="2">gonzalo anguiano</option>
+						<option value="3">patricia bonilla</option>
+						<!-- 继续添加更多选项 -->
+				</select></td>
+			</tr>
+			<tr>
+				<td>輸入產品名稱：</td>
+				<td><input type="text" name="productname" /></td>
+			</tr>
+			<tr>
+				<td>輸入價格：</td>
+				<td><input type="text" name="price" /></td>
+			</tr>
+			<tr>
+				<td>輸入特價：</td>
+				<td><input type="text" name="specialprice" /></td>
+			</tr>
+			<tr>
+				<td>選擇類別：</td>
+				<td><select name="categoryid">
+						<option value="none" selected disabled >請選擇選項</option>
+						<option value="1" hidden="hidden">電腦資訊</option>
+						<option value="2" hidden="hidden">電腦周邊</option>
+						<option value="3" hidden="hidden">行動通訊</option>
+						<option value="4" hidden="hidden">大型家電</option>
+						<option value="5" hidden="hidden">小型家電</option>
+						<option value="6" hidden="hidden">視聽娛樂</option>
+						<option value="7" hidden="hidden">辦公耗材</option>
+						<option value="8">筆記型電腦</option>
+						<option value="9">主機板</option>
+						<option value="10">記憶體</option>
+						<option value="11">光碟機</option>
+						<option value="12">機殼_散熱風扇</option>
+						<option value="13">介面卡</option>
+						<option value="14">處理器</option>
+						<!-- 继续添加更多选项 -->
+				</select></td>
+			</tr>
+			<tr>
+				<td>產品詳情：</td>
+				<td><input type="text" name="productdetailid" /></td>
+			</tr>
+			<tr>
+				<td>數量：</td>
+				<td><input type="text" name="quantity" /></td>
+			</tr>
+			<tr>
+				<td>描述：</td>
+				<td><input type="text" name="description" /></td>
+			</tr>
+			<td><input type="submit" value="確定" /></td>
+		</table>
+	</form>
+</body>
+</html>

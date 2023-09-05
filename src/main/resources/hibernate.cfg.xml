@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="connection.url">jdbc:sqlserver://localhost:1433;databaseName=BlackBeanSkinDB;encrypt=true;trustServerCertificate=true</property>
+        <property name="connection.username">typhoon</property>
+        <property name="connection.password">abc123</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+        <!-- Echo settings -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+        <!-- JDBC connection pool settings (c3p0) -->
+<!--        <property name="hibernate.c3p0.min_size">5</property>-->
+<!--        <property name="hibernate.c3p0.max_size">20</property>-->
+<!--        <property name="hibernate.c3p0.timeout">300</property>-->
+<!--        <property name="hibernate.c3p0.max_statements">50</property>-->
+<!--        <property name="hibernate.c3p0.idle_test_period">3000</property>-->
+
+        <!-- Schema auto updating configuration -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Entity classes mapping -->
+        <mapping class="tw.blackbean.model.ProductBasicDataBean"/>
+        <mapping class="tw.blackbean.model.ProductCategoryDataBean"/>
+        <mapping class="tw.blackbean.model.MemberData"/>
+    </session-factory>
+</hibernate-configuration>
+
+
+<!--        <?xml version="1.0" encoding="UTF-8"?>-->
+<!--        <!DOCTYPE hibernate-configuration PUBLIC-->
+<!--                "-//Hibernate/Hibernate Configuration DTD 3.0//EN"-->
+<!--                "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">-->
+<!--<hibernate-configuration>-->
+<!--<session-factory>-->
+<!--    <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>-->
+<!--    <property name="connection.url">-->
+<!--        jdbc:sqlserver://localhost:1433;databaseName=BlackBeanSkinDB;encrypt=true;trustServerCertificate=true-->
+<!--    </property>-->
+
+<!--    <property name="connection.username">typhoon</property>-->
+<!--    <property name="connection.password">abc123</property>-->
+<!--    <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>-->
+<!--    <property name="show_sql">true</property>-->
+<!--    <property name="format_sql">true</property>-->
+<!--    &lt;!&ndash;        <property name="hbm2ddl.auto">update</property>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <property name="hibernate.c3p0.min_size">5</property>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <property name="hibernate.c3p0.max_size">20</property>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <property name="hibernate.c3p0.timeout">300</property>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <property name="hibernate.c3p0.max_statements">50</property>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <property name="hibernate.c3p0.idle_test_period">3000</property>&ndash;&gt;-->
+
+
+<!--    <mapping class="tw.blackbean.model.MemberData"/>-->
+<!--</session-factory>-->
+<!--</hibernate-configuration>-->
