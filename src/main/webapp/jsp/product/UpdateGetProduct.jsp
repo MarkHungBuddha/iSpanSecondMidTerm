@@ -54,7 +54,7 @@
 
 			<div class="form-group">
 				<label for="specialprice">特價:</label>
-				<input type="text" class="form-control" id="specialprice" name="specialprice" value="${product.specialprice}" required pattern="^\d+(\.\d{1,2})?$">
+				<input type="text" class="form-control" id="specialprice" placeholder="特價" name="specialprice" value="${product.specialprice}" required pattern="^\d+(\.\d{1,2})?$">
 			</div>
 
 
