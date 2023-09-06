@@ -8,6 +8,7 @@ CREATE TABLE MemberData (
                             gender VARCHAR(10),
                             birthdate DATE,
                             phone VARCHAR(20),
+							passwd NVARCHAR(50)
                             email VARCHAR(100),
                             membercreationdate DATE,
                             country VARCHAR(50),
